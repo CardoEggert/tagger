@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="biggestParent" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tagger.Controller">
+   <children>
+      <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <RadioButton fx:id="stairsRB" mnemonicParsing="false" prefHeight="64.0" prefWidth="200.0" text="ascent stairs" />
+            <RadioButton fx:id="walkWithLoadRB" layoutX="266.0" layoutY="10.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="200.0" text="walk with load" />
+            <RadioButton fx:id="walkRB" layoutX="394.0" layoutY="10.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="200.0" text="walk" />
+            <RadioButton fx:id="nullRB" layoutX="710.0" layoutY="10.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="200.0" text="null" />
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="810.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <RadioButton fx:id="standingRB" mnemonicParsing="false" prefHeight="64.0" prefWidth="200.0" text="standing" />
+            <RadioButton fx:id="bendingRB" mnemonicParsing="false" prefHeight="64.0" prefWidth="200.0" text="bending" />
+            <RadioButton fx:id="kneelingRB" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="200.0" text="kneeling" />
+            <RadioButton fx:id="lyingRB" layoutX="138.0" layoutY="10.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="200.0" text="lying" />
+            <RadioButton fx:id="sittingRB" layoutX="266.0" layoutY="10.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="200.0" text="sitting" />
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER">
+         <children>
+            <VBox>
+               <children>
+                  <Button fx:id="submit" mnemonicParsing="false" prefHeight="100.0" prefWidth="1000.0" text="OK" />
+                  <Button fx:id="nopeButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="1000.0" text="Nope" />
+                  <Button fx:id="selectAllButton" layoutX="10.0" layoutY="110.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="1000.0" text="Select all" />
+                  <Button fx:id="deSelectAllButton" layoutX="10.0" layoutY="210.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="1000.0" text="Deselect all" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>
